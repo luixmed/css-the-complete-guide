@@ -1,3 +1,10 @@
+/* ================ GENERAL RESETS ================ */
+:root {
+  --color-green: #2ddf5c;
+  --color-green-shade-1: #0e4f1f;
+  --color-red: #ff1b68;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +17,107 @@ html {
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
 }
 
+/* ================ BASIC STYLES ================ */
+
+ul {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ================ HEADER SECTION ================ */
+
+/* HEADER (general layout) */
+.main-header {
+  /* Box */
+  padding: 0.8rem 1.6rem;
+
+  /* Style */
+  background-color: var(--color-green);
+}
+
+/* LOGO CONTAINER */
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* LOGO */
+.main-header__brand {
+  color: var(--color-green-shade-1);
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+/* NAVBAR */
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 12rem);
+}
+
+/* LIST ITEM */
+.main-nav__item {
+  display: inline-block;
+  margin-inline: 1.6rem;
+}
+
+/* LINK */
+.main-nav__item a {
+  /* Font */
+  color: var(--color-green-shade-1);
+  font-weight: bold;
+
+  /* Box */
+  padding-bottom: 3px;
+}
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+
+  /* Box */
+  border-bottom: 3px solid white;
+}
+
+/* LINK CTA */
+.main-nav__item--cta a {
+  /* Font */
+  color: white;
+
+  /* Box */
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+
+  /* Style */
+  background-color: var(--color-red);
+}
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  /* Font */
+  color: var(--color-red);
+
+  /* Box */
+  border: none;
+
+  /* Style */
+  background-color: white;
+}
+
+/* ================ SECTION ================ */
 .product-overview {
-  background-color: #ff1b68;
+  /* Box */
   height: 52.8rem;
   padding: 1rem;
+
+  /* Style */
+  background-image: url(/03-diving-deeper-into-css/freedom.jpg);
 }
 
 .product-overview h1 {
@@ -25,5 +126,5 @@ body {
 }
 
 .section-title {
-  color: #2ddf5c;
+  color: var(--color-green);
 }

@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- TITLE -->
     <title>Project</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CSS -->
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
+    <header class="main-header">
       <!-- LOGO -->
       <div>
-        <a href="index.html">uHost</a>
+        <a href="index.html" class="main-header__brand">uHost</a>
       </div>
+
       <!-- NAVBAR -->
-      <nav>
-        <ul>
-          <li>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
             <a href="packages/index.html">Packages</a>
           </li>
-          <li>
+          <li class="main-nav__item">
             <a href="customers/index.html">Customers</a>
           </li>
-          <li>
+          <li class="main-nav__item main-nav__item--cta">
             <a href="start-hosting/index.html">Start Hosting</a>
           </li>
         </ul>
