@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.product-overview {
+  background-color: #ff1b68;
+  height: 52.8rem;
+  padding: 1rem;
+}
+
+.product-overview h1 {
+  color: white;
+  font-family: "Anton", sans-serif;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
