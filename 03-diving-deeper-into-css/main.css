@@ -1,7 +1,9 @@
 /* ================ GENERAL RESETS ================ */
 :root {
   --color-green: #2ddf5c;
+  --color-green-tint-1: #d5ffdc;
   --color-green-shade-1: #0e4f1f;
+  --color-green-shade-2: #19b84c;
   --color-red: #ff1b68;
 }
 
@@ -30,6 +32,13 @@ ul {
 a {
   display: inline-block;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: inherit;
 }
 
 /* ================ HEADER SECTION ================ */
@@ -127,4 +136,96 @@ a {
 
 .section-title {
   color: var(--color-green);
+  text-align: center;
+}
+
+.plan {
+  /* Font */
+  text-align: center;
+  vertical-align: middle; /* !NEW KNOWLEDGE */
+
+  /* Box */
+  display: inline-block;
+  width: 30%;
+  padding: 3rem 2rem;
+  margin-block: 0.8rem;
+
+  /* Style */
+  background-color: var(--color-green-tint-1);
+}
+
+.plan--highlighted {
+  /* Font */
+  color: white;
+
+  /* Box */
+
+  /* Style */
+  background-color: var(--color-green-shade-2);
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 50%);
+}
+
+/* PLAN NAME */
+.plan__name {
+  /* Font */
+  color: var(--color-green-shade-2);
+
+  /* Box */
+  padding: 8px;
+  border-radius: 7px;
+  margin-bottom: 2rem;
+
+  /* Style */
+  background-color: white;
+  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 50%);
+}
+
+/* PLAN TITLE */
+.plan__title {
+  color: var(--color-green-shade-1);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.plan__price {
+  color: #777;
+  margin-bottom: 2.5rem;
+}
+
+.plan--highlighted .plan__title {
+  color: white;
+}
+.plan--highlighted .plan__price {
+  color: #0e4f1f;
+}
+
+/* PLAN FEATURE */
+.plan__feature {
+  margin-block: 1rem;
+}
+
+.plan h3 {
+  margin-bottom: 1.5rem;
+}
+
+.plan__features {
+  margin-bottom: 3rem;
+}
+
+/* BUTTON */
+.btn {
+  /* Font */
+  color: white;
+  font-weight: bold;
+  /* Box */
+  padding: 0.8rem;
+  border: 1px solid var(--color-green-shade-1);
+  border-radius: 8px;
+  /* Style */
+  background-color: var(--color-green-shade-1);
+}
+.btn:hover,
+.btn:active {
+  color: var(--color-green-shade-1);
+  background-color: white;
 }
